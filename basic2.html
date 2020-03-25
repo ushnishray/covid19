@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 700px;  /* The height is 400 pixels */
+        width: 700px;  /* The width is the width of the web page */
+       }
+       #info-box {
+        background-color: white;
+        border: 1px solid black;
+        
+        height: 20px;
+        padding: 10px;
+        
+        /*
+        position: absolute;
+        left: 10px;
+        top: 500px;
+        */
+      }
+
+    </style>
+  </head>
+
+  <body>
+      <center> 
+        <h3>NUMBER OF REPORTED CASES OF COVID-19 IN DIFFERENT PARTS OF LA</h3>
+        <div id="map"></div>
+     
+    
+        <p style="color:red">
+            PLEASE NOTE: AREA OF THE CIRCLES DOES NOT INDICATE AREA OVER WHICH CONTAGION IS SPREAD/ACTIVE -
+            JUST THE NUMBER OF CASES. 
+        </p>
+
+        <table border=1>
+            <tr>
+                <td>Number of Cases Reported: </td>
+                <td><div id="info-box">0</div></td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" id="casedate" name="casedate" value="2020-03-23" onchange="dateChange()"></td>
+            </tr>
+        </table>
+        
+        <p>
+            Data is from: <a href="http://www.publichealth.lacounty.gov/media/Coronavirus/">
+                http://www.publichealth.lacounty.gov/media/Coronavirus/</a>"
+        </p>
+    </center>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      var map;
+      var service;
+      var gdate;
+      var losangeles = {lat: 34.0522, lng: -118.2437};
+
+      // Initialize and add the map
+      function initMap() {
+        // Default date
+        gdate = 'mar23_2020';
+        loadData(gdate);
+      }
+
+      //Date changed
+      datesavail=['2020-03-23','2020-03-24'];
+      codes = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+      function dateChange(){
+          var obj = document.getElementById('casedate');
+          
+          sdate = obj.value;
+
+          if(!datesavail.includes(sdate)){
+            delete map;
+            map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: losangeles});
+            return;
+            //sdate = datesavail[datesavail.length-1];
+            //obj.style.color = 'red';
+          }
+          
+          year = sdate.substring(0,4);
+          month = sdate.substring(5,7);
+          day = sdate.substring(8,10);
+          
+          fdate = codes[parseInt(month)-1] + day + '_' + year;
+          loadData(fdate);
+      }
+
+      //Load data from JSON
+      function loadData(fdate){
+        console.log(fdate);
+       
+        delete map;
+        map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: losangeles});
+
+        var script = document.createElement('script');
+        script.src = './rawdata/' + fdate + '.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+
+        map.data.setStyle(function(feature){
+            var magnitude = feature.getProperty('mag');
+            return{
+                icon: getCircle(magnitude)
+            };
+        });
+        
+        map.data.addListener('mouseover', function(event){
+            map.data.revertStyle();
+            map.data.overrideStyle(event.feature,{strokeWeight: 2});
+            
+            document.getElementById('info-box').textContent = event.feature.getProperty('mag');
+        });
+      }
+
+      function eqfeed_callback(results){
+          map.data.addGeoJson(results);
+      }
+
+      function getCircle(magnitude) {
+        return {
+          path: google.maps.SymbolPath.CIRCLE,
+          fillColor: 'red',
+          fillOpacity: .5,
+          scale: magnitude,
+          strokeColor: 'white',
+          strokeWeight: .5
+        };
+      }
+      
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIt8L9M3-xq6B3UAsPwzjaNawpYRwd30c&libraries=places&callback=initMap">
+    </script>
+  </body>
+</html>
