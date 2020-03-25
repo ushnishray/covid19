@@ -2,6 +2,11 @@
 <html>
   <head>
     <style>
+      /*
+            Copyright Ushnish Ray (2020)
+            All rights reserved. You may not reproduce or modify this code without permission.
+      */
+
       /* Set the size of the div element that contains the map */
       #map {
         height: 700px;  /* The height is 400 pixels */
@@ -26,7 +31,7 @@
 
   <body>
       <center> 
-        <h3>NUMBER OF REPORTED CASES OF COVID-19 IN DIFFERENT PARTS OF LA</h3>
+        <h3 style="color:white">NUMBER OF REPORTED CASES OF COVID-19 IN DIFFERENT PARTS OF LA</h3>
         <div id="map"></div>
      
     
@@ -37,16 +42,16 @@
 
         <table border=1>
             <tr>
-                <td>Number of Cases Reported: </td>
+                <td style="color:white">Number of Cases Reported: </td>
                 <td><div id="info-box">0</div></td>
             </tr>
             <tr>
-                <td>Date:</td>
+                <td style="color:white">Date:</td>
                 <td><input type="date" id="casedate" name="casedate" value="2020-03-23" onchange="dateChange()"></td>
             </tr>
         </table>
         
-        <p>
+        <p style="color:white">
             Data is from: <a href="http://www.publichealth.lacounty.gov/media/Coronavirus/">
                 http://www.publichealth.lacounty.gov/media/Coronavirus/</a>"
         </p>
