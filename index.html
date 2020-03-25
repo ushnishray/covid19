@@ -68,7 +68,7 @@
             <tr>
                 <td style="color:white">Date:</td>
                 <td><center>
-                  <input type="date" id="casedate" name="casedate" value="2020-03-24" onchange="dateChange()">
+                  <input type="date" id="casedate" name="casedate" value="2020-03-25" onchange="dateChange()">
                 </center>
                 </td>
             </tr>
@@ -94,12 +94,13 @@
       // Initialize and add the map
       function initMap() {
         // Default date
-        gdate = 'mar24_2020';
+        gdate = 'mar25_2020';
         loadData(gdate);
       }
 
       //Date changed
-      datesavail=['2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20','2020-03-21','2020-03-22','2020-03-23','2020-03-24'];
+      datesavail=['2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20',
+      '2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25'];
       codes = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
       function dateChange(){
           var obj = document.getElementById('casedate');
