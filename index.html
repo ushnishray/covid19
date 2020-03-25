@@ -33,6 +33,14 @@
         height: 20px;
         padding: 10px;
       }
+      #casedate{
+        background-color: white;
+        border: 1px solid black;
+        
+        height: 20px;
+        width: 160px;
+        padding: 10px;
+      }
 
     </style>
   </head>
@@ -48,9 +56,9 @@
             JUST THE NUMBER OF CASES. 
         </p>
 
-        <table border=1>
+        <table border=1 cellpadding="5px">
             <tr>
-              <td style="color:white">Location selected:</td>
+              <td style="color:white" >Location selected:</td>
               <td><div id="loc-box"><center>None Selected</center></div></td>
             </tr>
             <tr>
@@ -59,7 +67,10 @@
             </tr>
             <tr>
                 <td style="color:white">Date:</td>
-                <td><input type="date" id="casedate" name="casedate" value="2020-03-24" onchange="dateChange()"></td>
+                <td><center>
+                  <input type="date" id="casedate" name="casedate" value="2020-03-24" onchange="dateChange()">
+                </center>
+                </td>
             </tr>
         </table>
         
