@@ -42,6 +42,10 @@
 
         <table border=1>
             <tr>
+              <td style="color:white">Location selected:</td>
+              <td><div id="loc-box"><center>None Selected</center></div></td>
+            </tr>
+            <tr>
                 <td style="color:white">Number of Cases Reported: </td>
                 <td><div id="info-box">0</div></td>
             </tr>
@@ -122,6 +126,8 @@
             map.data.overrideStyle(event.feature,{strokeWeight: 2});
             
             document.getElementById('info-box').textContent = event.feature.getProperty('mag');
+            document.getElementById('loc-box').textContent = event.feature.getProperty('place');
+            
         });
 
         map.data.addListener('click', function(event){
@@ -129,6 +135,8 @@
             map.data.overrideStyle(event.feature,{strokeWeight: 2});
             
             document.getElementById('info-box').textContent = event.feature.getProperty('mag');
+            document.getElementById('loc-box').textContent = event.feature.getProperty('place');
+            
         });
 
       }
