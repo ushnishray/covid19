@@ -537,7 +537,7 @@ eqfeed_callback({
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-121.6958,37.9319]
+				"coordinates":[-118.4732,34.0521]
 			}
 		},
 		{
@@ -592,7 +592,7 @@ eqfeed_callback({
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-123.0172,38.8055]
+				"coordinates":[-119.5604,36.0980]
 			}
 		},
 		{

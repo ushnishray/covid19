@@ -427,7 +427,7 @@ eqfeed_callback({
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-121.6958,37.9319]
+				"coordinates":[-118.4732,34.0521]
 			}
 		},
 		{
