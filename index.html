@@ -56,6 +56,12 @@
             JUST THE NUMBER OF CASES. 
         </p>
 
+        <p style="color:red">
+          The size of the circles will also be rescaled to accommodate the ever-increasing cases. Use earlier 
+          dates as a reference. 
+      </p>
+
+
         <table border=1 cellpadding="5px">
             <tr>
               <td style="color:white" >Location selected:</td>
@@ -135,7 +141,7 @@
         document.getElementsByTagName('head')[0].appendChild(script);
 
         map.data.setStyle(function(feature){
-            var magnitude = feature.getProperty('mag');
+            var magnitude = feature.getProperty('mag')*0.75;
             return{
                 icon: getCircle(magnitude)
             };
