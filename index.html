@@ -88,7 +88,7 @@
             <tr>
                 <td style="color:white">Date:</td>
                 <td><center>
-                    <input type="date" id="casedate" name="casedate" value="2020-03-26" onchange="dateChange()">
+                    <input type="date" id="casedate" name="casedate" value="2020-03-27" onchange="dateChange()">
                     </center>
                 </td>
             </tr>
@@ -116,7 +116,7 @@
       // Initialize and add the map
       function initMap() {
         // Default date
-        gdate = 'mar26_2020';
+        gdate = 'mar27_2020';
         
         myfetch = loadMasterData();
         loadData(gdate, myfetch);
@@ -129,7 +129,8 @@
       //All to do with google maps
       //Date changed
       datesavail=['2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20',
-      '2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26'];
+      '2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26',
+      '2020-03-27'];
       codes = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
       function dateChange(){
           var obj = document.getElementById('casedate');
@@ -307,11 +308,13 @@
         let myfetch = fetch('./rawdata/test.json').then(function(response){
             return response.text();
         }).then(function(text){
+            /*
             var lscript = document.createElement('div');
             lscript.textContent = text;
             lscript.id = 'mapdata';
             lscript.hidden = true;
             document.body.appendChild(lscript);
+            */
             return text
         });
         /*
@@ -341,7 +344,7 @@
                 {                    
                     //Next plot to canvas
                     //But combine data as needed
-                    //parseInt(v.substring(0,4)),parseInt(v.substring(5,7)),parseInt(v.substring(8))
+                    //console.log(ldata.x); //Note there is a bug with Date where counter is WRONG
                     var mdata = ldata.x.map((v,p) => ({x: new Date(v), y: ldata.y[p]}));
                     populate(ldata,mdata);
                 }
@@ -351,6 +354,7 @@
 
     function populate(ldata,mdata)
     {
+        //console.log(mdata);
         //console.log(mdata);
         var ctx = document.getElementById('achart');
         var chart = new Chart(ctx,{
@@ -391,54 +395,7 @@
             }            
         })
     }
-
-    function play()
-    {
-        var ctx = document.getElementById("achart");
-        //var Chart = require('chart.js');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });
-    }
-
-    function drawChart(location)
-    {
-
-    }
-
+ 
     </script>
 
     <script async defer
