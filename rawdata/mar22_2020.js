@@ -5,7 +5,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"La Verne"
+				"place":"La Verne",
+				"id":49
 			},
 			"geometry":{
 				"type":"Point",
@@ -16,7 +17,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Sunland"
+				"place":"Sunland",
+				"id":90
 			},
 			"geometry":{
 				"type":"Point",
@@ -27,7 +29,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"Redondo Beach"
+				"place":"Redondo Beach",
+				"id":72
 			},
 			"geometry":{
 				"type":"Point",
@@ -38,7 +41,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"South Gate"
+				"place":"South Gate",
+				"id":83
 			},
 			"geometry":{
 				"type":"Point",
@@ -49,7 +53,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"Century City"
+				"place":"Century City",
+				"id":16
 			},
 			"geometry":{
 				"type":"Point",
@@ -60,7 +65,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Glendora"
+				"place":"Glendora",
+				"id":38
 			},
 			"geometry":{
 				"type":"Point",
@@ -71,7 +77,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":19,
-				"place":"West Hollywood"
+				"place":"West Hollywood",
+				"id":107
 			},
 			"geometry":{
 				"type":"Point",
@@ -82,7 +89,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"South El Monte"
+				"place":"South El Monte",
+				"id":82
 			},
 			"geometry":{
 				"type":"Point",
@@ -93,7 +101,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"South Pasadena"
+				"place":"South Pasadena",
+				"id":85
 			},
 			"geometry":{
 				"type":"Point",
@@ -104,7 +113,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Playa Vista"
+				"place":"Playa Vista",
+				"id":70
 			},
 			"geometry":{
 				"type":"Point",
@@ -115,7 +125,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Vermont Knolls"
+				"place":"Vermont Knolls",
+				"id":100
 			},
 			"geometry":{
 				"type":"Point",
@@ -126,7 +137,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Stevenson Ranch"
+				"place":"Stevenson Ranch",
+				"id":87
 			},
 			"geometry":{
 				"type":"Point",
@@ -137,7 +149,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"West Hills"
+				"place":"West Hills",
+				"id":106
 			},
 			"geometry":{
 				"type":"Point",
@@ -148,7 +161,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Los Feliz"
+				"place":"Los Feliz",
+				"id":56
 			},
 			"geometry":{
 				"type":"Point",
@@ -159,7 +173,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"Westchester"
+				"place":"Westchester",
+				"id":110
 			},
 			"geometry":{
 				"type":"Point",
@@ -170,7 +185,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":6,
-				"place":"Beverlywood"
+				"place":"Beverlywood",
+				"id":8
 			},
 			"geometry":{
 				"type":"Point",
@@ -181,7 +197,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Whittier"
+				"place":"Whittier",
+				"id":113
 			},
 			"geometry":{
 				"type":"Point",
@@ -192,7 +209,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"University Park"
+				"place":"University Park",
+				"id":96
 			},
 			"geometry":{
 				"type":"Point",
@@ -203,7 +221,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"Park La Brea"
+				"place":"Park La Brea",
+				"id":69
 			},
 			"geometry":{
 				"type":"Point",
@@ -214,7 +233,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":5,
-				"place":"Mar Vista"
+				"place":"Mar Vista",
+				"id":59
 			},
 			"geometry":{
 				"type":"Point",
@@ -225,7 +245,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":6,
-				"place":"Valley Glen"
+				"place":"Valley Glen",
+				"id":97
 			},
 			"geometry":{
 				"type":"Point",
@@ -236,7 +257,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Reseda"
+				"place":"Reseda",
+				"id":73
 			},
 			"geometry":{
 				"type":"Point",
@@ -247,7 +269,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":7,
-				"place":"Pacific Palisades"
+				"place":"Pacific Palisades",
+				"id":65
 			},
 			"geometry":{
 				"type":"Point",
@@ -258,7 +281,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"Santa Clarita"
+				"place":"Santa Clarita",
+				"id":77
 			},
 			"geometry":{
 				"type":"Point",
@@ -269,7 +293,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"West Covina"
+				"place":"West Covina",
+				"id":105
 			},
 			"geometry":{
 				"type":"Point",
@@ -280,7 +305,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Westlake"
+				"place":"Westlake",
+				"id":111
 			},
 			"geometry":{
 				"type":"Point",
@@ -291,7 +317,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":15,
-				"place":"Long Beach"
+				"place":"Long Beach",
+				"id":118
 			},
 			"geometry":{
 				"type":"Point",
@@ -302,7 +329,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":5,
-				"place":"Westwood"
+				"place":"Westwood",
+				"id":112
 			},
 			"geometry":{
 				"type":"Point",
@@ -313,7 +341,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Castaic"
+				"place":"Castaic",
+				"id":15
 			},
 			"geometry":{
 				"type":"Point",
@@ -324,7 +353,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Diamond Bar"
+				"place":"Diamond Bar",
+				"id":25
 			},
 			"geometry":{
 				"type":"Point",
@@ -335,7 +365,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":7,
-				"place":"Santa Monica"
+				"place":"Santa Monica",
+				"id":78
 			},
 			"geometry":{
 				"type":"Point",
@@ -346,7 +377,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Vermont Vista"
+				"place":"Vermont Vista",
+				"id":101
 			},
 			"geometry":{
 				"type":"Point",
@@ -357,7 +389,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"West Vernon"
+				"place":"West Vernon",
+				"id":109
 			},
 			"geometry":{
 				"type":"Point",
@@ -368,7 +401,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Bellflower"
+				"place":"Bellflower",
+				"id":6
 			},
 			"geometry":{
 				"type":"Point",
@@ -379,7 +413,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":5,
-				"place":"Hancock Park"
+				"place":"Hancock Park",
+				"id":40
 			},
 			"geometry":{
 				"type":"Point",
@@ -390,7 +425,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":17,
-				"place":"Melrose"
+				"place":"Melrose",
+				"id":60
 			},
 			"geometry":{
 				"type":"Point",
@@ -401,7 +437,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":5,
-				"place":"Woodland Hills"
+				"place":"Woodland Hills",
+				"id":117
 			},
 			"geometry":{
 				"type":"Point",
@@ -412,7 +449,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":5,
-				"place":"Hollywood Hills"
+				"place":"Hollywood Hills",
+				"id":43
 			},
 			"geometry":{
 				"type":"Point",
@@ -423,7 +461,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":23,
-				"place":"Brentwood"
+				"place":"Brentwood",
+				"id":10
 			},
 			"geometry":{
 				"type":"Point",
@@ -434,7 +473,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Palms"
+				"place":"Palms",
+				"id":67
 			},
 			"geometry":{
 				"type":"Point",
@@ -445,7 +485,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Koreatown"
+				"place":"Koreatown",
+				"id":46
 			},
 			"geometry":{
 				"type":"Point",
@@ -456,7 +497,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Hawthorne"
+				"place":"Hawthorne",
+				"id":41
 			},
 			"geometry":{
 				"type":"Point",
@@ -467,7 +509,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"San Fernando"
+				"place":"San Fernando",
+				"id":75
 			},
 			"geometry":{
 				"type":"Point",
@@ -478,7 +521,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Downtown"
+				"place":"Downtown",
+				"id":26
 			},
 			"geometry":{
 				"type":"Point",
@@ -489,7 +533,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Santa Monica Mountains"
+				"place":"Santa Monica Mountains",
+				"id":79
 			},
 			"geometry":{
 				"type":"Point",
@@ -500,7 +545,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Arcadia"
+				"place":"Arcadia",
+				"id":3
 			},
 			"geometry":{
 				"type":"Point",
@@ -511,7 +557,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Vernon Central"
+				"place":"Vernon Central",
+				"id":102
 			},
 			"geometry":{
 				"type":"Point",
@@ -522,7 +569,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Burbank"
+				"place":"Burbank",
+				"id":11
 			},
 			"geometry":{
 				"type":"Point",
@@ -533,7 +581,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"San Pedro"
+				"place":"San Pedro",
+				"id":76
 			},
 			"geometry":{
 				"type":"Point",
@@ -544,7 +593,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"La Canada Flintridge"
+				"place":"La Canada Flintridge",
+				"id":47
 			},
 			"geometry":{
 				"type":"Point",
@@ -555,7 +605,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":5,
-				"place":"Boyle Heights"
+				"place":"Boyle Heights",
+				"id":9
 			},
 			"geometry":{
 				"type":"Point",
@@ -566,7 +617,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Sun Valley"
+				"place":"Sun Valley",
+				"id":89
 			},
 			"geometry":{
 				"type":"Point",
@@ -577,7 +629,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"La Mirada"
+				"place":"La Mirada",
+				"id":48
 			},
 			"geometry":{
 				"type":"Point",
@@ -588,7 +641,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Winnetka"
+				"place":"Winnetka",
+				"id":116
 			},
 			"geometry":{
 				"type":"Point",
@@ -599,7 +653,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"South Whittier"
+				"place":"South Whittier",
+				"id":86
 			},
 			"geometry":{
 				"type":"Point",
@@ -610,7 +665,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":7,
-				"place":"Manhattan Beach"
+				"place":"Manhattan Beach",
+				"id":58
 			},
 			"geometry":{
 				"type":"Point",
@@ -621,7 +677,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"West Adams"
+				"place":"West Adams",
+				"id":104
 			},
 			"geometry":{
 				"type":"Point",
@@ -632,7 +689,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"Baldwin Hills"
+				"place":"Baldwin Hills",
+				"id":5
 			},
 			"geometry":{
 				"type":"Point",
@@ -643,7 +701,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"Alhambra"
+				"place":"Alhambra",
+				"id":1
 			},
 			"geometry":{
 				"type":"Point",
@@ -654,7 +713,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Cerritos"
+				"place":"Cerritos",
+				"id":18
 			},
 			"geometry":{
 				"type":"Point",
@@ -665,7 +725,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"Pasadena"
+				"place":"Pasadena",
+				"id":119
 			},
 			"geometry":{
 				"type":"Point",
@@ -676,7 +737,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":12,
-				"place":"Hollywood"
+				"place":"Hollywood",
+				"id":42
 			},
 			"geometry":{
 				"type":"Point",
@@ -687,7 +749,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Temple"
+				"place":"Temple",
+				"id":93
 			},
 			"geometry":{
 				"type":"Point",
@@ -698,7 +761,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Rancho Palos Verdes"
+				"place":"Rancho Palos Verdes",
+				"id":71
 			},
 			"geometry":{
 				"type":"Point",
@@ -709,7 +773,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Echo Park"
+				"place":"Echo Park",
+				"id":31
 			},
 			"geometry":{
 				"type":"Point",
@@ -720,7 +785,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"West Los Angeles"
+				"place":"West Los Angeles",
+				"id":108
 			},
 			"geometry":{
 				"type":"Point",
@@ -731,7 +797,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Van Nuys"
+				"place":"Van Nuys",
+				"id":98
 			},
 			"geometry":{
 				"type":"Point",
@@ -742,7 +809,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"Altadena"
+				"place":"Altadena",
+				"id":2
 			},
 			"geometry":{
 				"type":"Point",
@@ -753,7 +821,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"Studio City"
+				"place":"Studio City",
+				"id":88
 			},
 			"geometry":{
 				"type":"Point",
@@ -764,7 +833,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Calabasas"
+				"place":"Calabasas",
+				"id":12
 			},
 			"geometry":{
 				"type":"Point",
@@ -775,7 +845,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"Monterey Park"
+				"place":"Monterey Park",
+				"id":62
 			},
 			"geometry":{
 				"type":"Point",
@@ -786,7 +857,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Walnut"
+				"place":"Walnut",
+				"id":103
 			},
 			"geometry":{
 				"type":"Point",
@@ -797,7 +869,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Canoga Park"
+				"place":"Canoga Park",
+				"id":13
 			},
 			"geometry":{
 				"type":"Point",
@@ -808,7 +881,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"Granada Hills"
+				"place":"Granada Hills",
+				"id":39
 			},
 			"geometry":{
 				"type":"Point",
@@ -819,7 +893,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Lynwood"
+				"place":"Lynwood",
+				"id":57
 			},
 			"geometry":{
 				"type":"Point",
@@ -830,7 +905,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":8,
-				"place":"Tarzana"
+				"place":"Tarzana",
+				"id":92
 			},
 			"geometry":{
 				"type":"Point",
@@ -841,7 +917,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"Lancaster"
+				"place":"Lancaster",
+				"id":52
 			},
 			"geometry":{
 				"type":"Point",
@@ -852,7 +929,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Lawndale"
+				"place":"Lawndale",
+				"id":53
 			},
 			"geometry":{
 				"type":"Point",
@@ -863,7 +941,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":5,
-				"place":"North Hollywood"
+				"place":"North Hollywood",
+				"id":63
 			},
 			"geometry":{
 				"type":"Point",
@@ -874,7 +953,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"Inglewood"
+				"place":"Inglewood",
+				"id":45
 			},
 			"geometry":{
 				"type":"Point",
@@ -885,7 +965,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Athens"
+				"place":"Athens",
+				"id":4
 			},
 			"geometry":{
 				"type":"Point",
@@ -896,7 +977,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"Carson"
+				"place":"Carson",
+				"id":14
 			},
 			"geometry":{
 				"type":"Point",
@@ -907,7 +989,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":10,
-				"place":"Encino"
+				"place":"Encino",
+				"id":33
 			},
 			"geometry":{
 				"type":"Point",
@@ -918,7 +1001,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"Miracle Mile"
+				"place":"Miracle Mile",
+				"id":61
 			},
 			"geometry":{
 				"type":"Point",
@@ -929,7 +1013,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"Torrance"
+				"place":"Torrance",
+				"id":94
 			},
 			"geometry":{
 				"type":"Point",
@@ -940,7 +1025,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":4,
-				"place":"Culver City"
+				"place":"Culver City",
+				"id":23
 			},
 			"geometry":{
 				"type":"Point",
@@ -951,7 +1037,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Northridge"
+				"place":"Northridge",
+				"id":64
 			},
 			"geometry":{
 				"type":"Point",
@@ -962,7 +1049,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Lakewood"
+				"place":"Lakewood",
+				"id":51
 			},
 			"geometry":{
 				"type":"Point",
@@ -973,7 +1061,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Eagle Rock"
+				"place":"Eagle Rock",
+				"id":28
 			},
 			"geometry":{
 				"type":"Point",
@@ -984,7 +1073,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":7,
-				"place":"Venice"
+				"place":"Venice",
+				"id":99
 			},
 			"geometry":{
 				"type":"Point",
@@ -995,7 +1085,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"El Segundo"
+				"place":"El Segundo",
+				"id":32
 			},
 			"geometry":{
 				"type":"Point",
@@ -1006,7 +1097,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":3,
-				"place":"Silverlake"
+				"place":"Silverlake",
+				"id":81
 			},
 			"geometry":{
 				"type":"Point",
@@ -1017,7 +1109,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Sylmar"
+				"place":"Sylmar",
+				"id":91
 			},
 			"geometry":{
 				"type":"Point",
@@ -1028,7 +1121,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"East Hollywood"
+				"place":"East Hollywood",
+				"id":29
 			},
 			"geometry":{
 				"type":"Point",
@@ -1039,7 +1133,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Tujunga"
+				"place":"Tujunga",
+				"id":95
 			},
 			"geometry":{
 				"type":"Point",
@@ -1050,7 +1145,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":5,
-				"place":"Crestview"
+				"place":"Crestview",
+				"id":22
 			},
 			"geometry":{
 				"type":"Point",
@@ -1061,7 +1157,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Lake Balboa"
+				"place":"Lake Balboa",
+				"id":50
 			},
 			"geometry":{
 				"type":"Point",
@@ -1072,7 +1169,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"Del Rey"
+				"place":"Del Rey",
+				"id":24
 			},
 			"geometry":{
 				"type":"Point",
@@ -1083,7 +1181,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"San Dimas"
+				"place":"San Dimas",
+				"id":74
 			},
 			"geometry":{
 				"type":"Point",
@@ -1094,7 +1193,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Wilmington"
+				"place":"Wilmington",
+				"id":114
 			},
 			"geometry":{
 				"type":"Point",
@@ -1105,7 +1205,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Gardena"
+				"place":"Gardena",
+				"id":36
 			},
 			"geometry":{
 				"type":"Point",
@@ -1116,7 +1217,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Century Palms/Cove"
+				"place":"Century Palms/Cove",
+				"id":17
 			},
 			"geometry":{
 				"type":"Point",
@@ -1127,7 +1229,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":6,
-				"place":"Glendale"
+				"place":"Glendale",
+				"id":37
 			},
 			"geometry":{
 				"type":"Point",
@@ -1138,7 +1241,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Paramount"
+				"place":"Paramount",
+				"id":68
 			},
 			"geometry":{
 				"type":"Point",
@@ -1149,7 +1253,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":8,
-				"place":"Lomita"
+				"place":"Lomita",
+				"id":55
 			},
 			"geometry":{
 				"type":"Point",
@@ -1160,7 +1265,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":2,
-				"place":"East Los Angeles"
+				"place":"East Los Angeles",
+				"id":30
 			},
 			"geometry":{
 				"type":"Point",
@@ -1171,7 +1277,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":1,
-				"place":"Covina"
+				"place":"Covina",
+				"id":21
 			},
 			"geometry":{
 				"type":"Point",
@@ -1182,7 +1289,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":7,
-				"place":"Sherman Oaks"
+				"place":"Sherman Oaks",
+				"id":80
 			},
 			"geometry":{
 				"type":"Point",
@@ -1193,7 +1301,8 @@ eqfeed_callback({
 			"type":"Feature",
 			"properties":{
 				"mag":8,
-				"place":"Beverly Hills"
+				"place":"Beverly Hills",
+				"id":7
 			},
 			"geometry":{
 				"type":"Point",

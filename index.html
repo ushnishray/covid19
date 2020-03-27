@@ -41,11 +41,21 @@
         width: 160px;
         padding: 10px;
       }
-
+      #achart{
+          background-color: white;
+          position: static;
+      }
+      #storage{
+        background-color: white;
+        border: 1px solid black;
+        
+        height: 20px;
+        padding: 10px;
+      }
     </style>
   </head>
 
-  <body>
+  <body bgcolor="1e4f3b">
       <center> 
         <h3 style="color:white">NUMBER OF REPORTED CASES OF COVID-19 IN DIFFERENT PARTS OF LA</h3>
         <div id="map"></div>
@@ -59,13 +69,17 @@
         <p style="color:red">
           The size of the circles will also be rescaled to accommodate the ever-increasing cases. Use earlier 
           dates as a reference. 
-      </p>
+        </p>
 
+        <p style="color:white">
+            Data is from: <a href="http://www.publichealth.lacounty.gov/media/Coronavirus/" style="color:red" target="_blank">
+                http://www.publichealth.lacounty.gov/media/Coronavirus/</a>
+        </p>
 
         <table border=1 cellpadding="5px">
             <tr>
-              <td style="color:white" >Location selected:</td>
-              <td><div id="loc-box"><center>None Selected</center></div></td>
+                <td style="color:white" >Location selected:</td>
+                <td><div id="loc-box"><center>None Selected</center></div></td>
             </tr>
             <tr>
                 <td style="color:white">Number of Cases Reported: </td>
@@ -74,23 +88,24 @@
             <tr>
                 <td style="color:white">Date:</td>
                 <td><center>
-                  <input type="date" id="casedate" name="casedate" value="2020-03-26" onchange="dateChange()">
-                </center>
+                    <input type="date" id="casedate" name="casedate" value="2020-03-26" onchange="dateChange()">
+                    </center>
                 </td>
             </tr>
         </table>
-        
+  
         <p style="color:white">
         Earliest available date: Mar 16, 2020.
         </p>
 
-        <p style="color:white">
-            Data is from: <a href="http://www.publichealth.lacounty.gov/media/Coronavirus/" style="color:red" target="_blank">
-                http://www.publichealth.lacounty.gov/media/Coronavirus/</a>
-        </p>
     </center>
 
+    <script src="./charjs/node_modules/moment/moment.js"></script>
+    <script>
+        moment().format();
+    </script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./charjs/node_modules/chart.js/dist/Chart.js"></script>
     <script>
       var map;
       var service;
@@ -101,9 +116,16 @@
       function initMap() {
         // Default date
         gdate = 'mar26_2020';
-        loadData(gdate);
+        
+        myfetch = loadMasterData();
+        loadData(gdate, myfetch);
+
+        //loadLocData(myfetch,1);
+        //play();
       }
 
+      //////////////////
+      //All to do with google maps
       //Date changed
       datesavail=['2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20',
       '2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26'];
@@ -130,8 +152,8 @@
       }
 
       //Load data from JSON
-      function loadData(fdate){
-        console.log(fdate);
+      function loadData(fdate, myfetch){
+        //console.log(fdate);
        
         delete map;
         map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: losangeles});
@@ -153,7 +175,7 @@
             
             document.getElementById('info-box').textContent = event.feature.getProperty('mag');
             document.getElementById('loc-box').textContent = event.feature.getProperty('place');
-            
+            loadLocData(myfetch,event.feature.getProperty('id'));
         });
 
         map.data.addListener('click', function(event){
@@ -162,7 +184,7 @@
             
             document.getElementById('info-box').textContent = event.feature.getProperty('mag');
             document.getElementById('loc-box').textContent = event.feature.getProperty('place');
-            
+            loadLocData(myfetch,event.feature.getProperty('id'));
         });
 
       }
@@ -181,11 +203,245 @@
           strokeWeight: .5
         };
       }
-      
+    </script>
+    
+    <center>
+        <div id="storage" hidden="false">A</div>
+        <h3 style="color:white">
+            <u>Trend of Cases in Selected Location</u>
+        </h3>        
+        
+        <!--
+        <h4  style="color:white">            
+            Data set size too small for proper analysis.
+        </h4>
+        -->
+
+        <table border=1>
+            <tr>
+                <td>
+                    <table id="anTab" cellpadding=0 cellspacing=0> 
+                        <tr>
+                            <td>
+                                <canvas id="achart" width="400px" height="300px"></canvas>
+                            </td>
+                        </tr>  
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+     
+    <script>
+    //////////////////
+    //All to do with charts
+
+    function populateAll()
+    {
+        tabobj = document.getElementById("anTab");
+        var rowobj = tabobj.rows[0];
+
+        data = document.getELementById("mapdata");
+        console.log(data.length)
+        for(var i=0;i<data.length;i++)
+        {
+            var elem = document.createElement('canvas');
+            
+            elem.style.cssText="position:relative;z-index:";
+            elem.style.cssText+=baseobj.zIndex+i+1;
+            elem.style.cssText+="background-color:white;";
+            //elem.style.top = 0 + "px"; //rect.top + "px";
+            //elem.style.left = 0 + "px"; //rect.left + "px";
+            elem.style.height = "160px";
+            elem.style.width = "250px";
+            //elem.hidden = true;
+        
+            elem.id = 'acanvas' + i.toString();  
+
+            rowobj.deleteCell(0);
+            var x = rowobj.insertCell(-1);
+            x.appendChild(elem);
+            
+            //Next plot to canvas
+            //But combine data as needed
+            var mdata = data[i].x.map((v,p) => ({x: p, y: data[i].y[p]}));
+            populate(elem,data[i].x,mdata);
+            
+
+            //elem.hidden = true;
+        }
+    }
+
+    function loadMasterData()
+    {
+        /*
+        $.getJSON('./rawdata/test.json',function(data){            
+        })
+        .fail(function(){
+            console.log('FAIL');
+        })
+        .done(function(data){
+            var script = document.createElement('script');
+            script.src = data;
+            script.id = 'mapdata';
+            document.getElementsByTagName('head')[0].appendChild(script);
+        });
+        */
+
+        /*
+        var client = new XMLHttpRequest();
+        client.open('GET','./rawdata/test.json');
+        client.onload = function()
+        {
+            var script = document.createElement('script');
+            script.src = client.responseText;
+            script.id = 'mapdata';
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+        client.send();
+        */
+
+        
+        let myfetch = fetch('./rawdata/test.json').then(function(response){
+            return response.text();
+        }).then(function(text){
+            var lscript = document.createElement('div');
+            lscript.textContent = text;
+            lscript.id = 'mapdata';
+            lscript.hidden = true;
+            document.body.appendChild(lscript);
+            return text
+        });
+        /*
+        .then(function(text){
+            sobj = document.getElementById('mapdata');   
+            //console.log(sobj.textContent); 
+            jobj = JSON.parse(sobj.textContent);              
+            for(ldata in jobj){
+                console.log(ldata.id);
+            }
+            return jobj;         
+        });
+        */
+            
+        return myfetch;
+    } 
+
+    function loadLocData(myfetch, locationID)
+    { 
+        myfetch.then(function(text){
+            jobj = JSON.parse(text);          
+            for (idx in jobj)
+            {
+                ldata = jobj[idx];
+                //console.log(ldata.id);                
+                if(locationID == ldata.id)
+                {                    
+                    //Next plot to canvas
+                    //But combine data as needed
+                    //parseInt(v.substring(0,4)),parseInt(v.substring(5,7)),parseInt(v.substring(8))
+                    var mdata = ldata.x.map((v,p) => ({x: new Date(v), y: ldata.y[p]}));
+                    populate(ldata,mdata);
+                }
+            }
+        });
+    }
+
+    function populate(ldata,mdata)
+    {
+        //console.log(mdata);
+        var ctx = document.getElementById('achart');
+        var chart = new Chart(ctx,{
+            type:'scatter',
+            data:{
+                datasets: [{
+                    label: ldata.place,
+                    data: mdata,
+                    pointBackgroundColor: 'rgba(63,63,191,1)'
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        type: 'time',
+                        distribution: 'series',
+                        time: {                                
+                            displayFormats: {
+                                unit: 'day'
+                            }
+                        },
+                        position:"bottom"
+                    }],
+                    yAxes: [{
+                        ticks:{
+                            min:0,
+                            stepSize: 1                            
+                        },
+                        scaleLabel:{
+                            display: true,
+                            labelString: 'Number of Cases'
+                        }
+                    }]
+                },
+                 legend:{
+                        display: false                    
+                }
+            }            
+        })
+    }
+
+    function play()
+    {
+        var ctx = document.getElementById("achart");
+        //var Chart = require('chart.js');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    }
+
+    function drawChart(location)
+    {
+
+    }
+
     </script>
 
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIt8L9M3-xq6B3UAsPwzjaNawpYRwd30c&libraries=places&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIt8L9M3-xq6B3UAsPwzjaNawpYRw    d30c&libraries=places&callback=initMap">
     </script>
   </body>
 </html>
