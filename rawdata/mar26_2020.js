@@ -424,6 +424,18 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
+				"mag":41,
+				"place":"Long Beach",
+				"id":118
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-118.1937,33.7701]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
 				"mag":2,
 				"place":"Duarte",
 				"id":27
@@ -1019,6 +1031,18 @@ eqfeed_callback({
 			"geometry":{
 				"type":"Point",
 				"coordinates":[-118.0648,33.8583]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"mag":9,
+				"place":"Pasadena",
+				"id":119
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-118.1445,34.1478]
 			}
 		},
 		{

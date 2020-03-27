@@ -111,6 +111,7 @@
       var service;
       var gdate;
       var losangeles = {lat: 34.0522, lng: -118.2437};
+      var myfetch;
 
       // Initialize and add the map
       function initMap() {
@@ -148,7 +149,7 @@
           day = sdate.substring(8,10);
           
           fdate = codes[parseInt(month)-1] + day + '_' + year;
-          loadData(fdate);
+          loadData(fdate, myfetch);
       }
 
       //Load data from JSON
@@ -441,7 +442,7 @@
     </script>
 
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIt8L9M3-xq6B3UAsPwzjaNawpYRw    d30c&libraries=places&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIt8L9M3-xq6B3UAsPwzjaNawpYRwd30c&libraries=places&callback=initMap">
     </script>
   </body>
 </html>
