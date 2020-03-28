@@ -172,8 +172,11 @@
       // Initialize and add the map
       function initMap() {
         // Default date
-        gdate = 'mar27_2020';
+        gdate = 'mar28_2020';
         
+        var delem = document.getElementById('casedate');
+        delem.value = '2020-03-28';
+
         myfetch = loadMasterData();
         loadData(gdate, myfetch);
 
@@ -186,7 +189,7 @@
       //Date changed
       datesavail=['2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20',
       '2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26',
-      '2020-03-27'];
+      '2020-03-27','2020-03-28'];
       codes = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
       function dateChange(){
           var obj = document.getElementById('casedate');
@@ -221,16 +224,16 @@
         document.getElementsByTagName('head')[0].appendChild(script);
 
         map.data.setStyle(function(feature){
-            var magnitude = feature.getProperty('mag')*0.75;
+            var magnitude = feature.getProperty('mag')*0.5;
             return{
-                icon: getCircle(magnitude)
+                icon: getCircle(magnitude,'red')
             };
         });
         
         map.data.addListener('mouseover', function(event){
             map.data.revertStyle();
-            map.data.overrideStyle(event.feature,{strokeWeight: 2});
-            
+            map.data.overrideStyle(event.feature,{strokeWeight: 2, fillColor:'blue'});
+
             document.getElementById('info-box').textContent = event.feature.getProperty('mag');
             document.getElementById('loc-box').textContent = event.feature.getProperty('place');
             loadLocData(myfetch,event.feature.getProperty('id'));
@@ -251,10 +254,10 @@
           map.data.addGeoJson(results);
       }
 
-      function getCircle(magnitude) {
+      function getCircle(magnitude, lcolor) {
         return {
           path: google.maps.SymbolPath.CIRCLE,
-          fillColor: 'red',
+          fillColor: lcolor,
           fillOpacity: .5,
           scale: magnitude,
           strokeColor: 'white',
