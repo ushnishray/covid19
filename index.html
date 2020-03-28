@@ -51,14 +51,6 @@
         padding: 10px;
       }
 
-      #storage{
-        background-color: white;
-        border: 1px solid black;
-        
-        height: 20px;
-        padding: 10px;
-      }
-
       .mapstruct{
           float: left;
           display: inline-block;
@@ -81,10 +73,34 @@
           color: white;
           text-align: center;
       }
+
+      #mheader2{
+          color: white;
+          text-align: center;
+      }
+
+      tr.noborder{
+          border: 0;          
+      }
+
+      th.nopadding{          
+          padding: 0px;
+          color: white;
+          text-align: center;
+
+      }
+
+      table{
+          border:1;
+      }
+
+      #anTab{
+          cell-padding: 0;
+      }
     </style>
   </head>
 
-  <body>
+  <body bgcolor="green">
       <header>
         <h3 id="mheader">NUMBER OF REPORTED CASES OF COVID-19 IN DIFFERENT PARTS OF LA</h3>
       </header>
@@ -95,10 +111,6 @@
     </article>
    
     <article class="chartstruct">
-        <div id="storage" hidden="false">A</div>
-        <h3 style="color:white">
-            <u>Trend of Cases in Selected Location</u>
-        </h3>        
         
         <!--
         <h4  style="color:white">            
@@ -106,10 +118,15 @@
         </h4>
         -->
 
-        <table border=1>
+        <table id="anTab">
+            <tr class="noborder">
+                <th class="nopadding">                    
+                        <u>Trend of Cases in Selected Location</u>                       
+                </th>
+            </tr>
             <tr>
                 <td>
-                    <table id="anTab" cellpadding=0 cellspacing=0> 
+                    <table cellpadding=0 cellspacing=0> 
                         <tr>
                             <td>
                                 <canvas id="achart"></canvas>
@@ -275,96 +292,13 @@
     <script>
     //////////////////
     //All to do with charts
-
-    function populateAll()
-    {
-        tabobj = document.getElementById("anTab");
-        var rowobj = tabobj.rows[0];
-
-        data = document.getELementById("mapdata");
-        console.log(data.length)
-        for(var i=0;i<data.length;i++)
-        {
-            var elem = document.createElement('canvas');
-            
-            elem.style.cssText="position:relative;z-index:";
-            elem.style.cssText+=baseobj.zIndex+i+1;
-            elem.style.cssText+="background-color:white;";
-            //elem.style.top = 0 + "px"; //rect.top + "px";
-            //elem.style.left = 0 + "px"; //rect.left + "px";
-            elem.style.height = "160px";
-            elem.style.width = "250px";
-            //elem.hidden = true;
-        
-            elem.id = 'acanvas' + i.toString();  
-
-            rowobj.deleteCell(0);
-            var x = rowobj.insertCell(-1);
-            x.appendChild(elem);
-            
-            //Next plot to canvas
-            //But combine data as needed
-            var mdata = data[i].x.map((v,p) => ({x: p, y: data[i].y[p]}));
-            populate(elem,data[i].x,mdata);
-            
-
-            //elem.hidden = true;
-        }
-    }
-
     function loadMasterData()
     {
-        /*
-        $.getJSON('./rawdata/test.json',function(data){            
-        })
-        .fail(function(){
-            console.log('FAIL');
-        })
-        .done(function(data){
-            var script = document.createElement('script');
-            script.src = data;
-            script.id = 'mapdata';
-            document.getElementsByTagName('head')[0].appendChild(script);
-        });
-        */
-
-        /*
-        var client = new XMLHttpRequest();
-        client.open('GET','./rawdata/test.json');
-        client.onload = function()
-        {
-            var script = document.createElement('script');
-            script.src = client.responseText;
-            script.id = 'mapdata';
-            document.getElementsByTagName('head')[0].appendChild(script);
-        }
-        client.send();
-        */
-
-        
         let myfetch = fetch('./rawdata/test.json').then(function(response){
             return response.text();
         }).then(function(text){
-            /*
-            var lscript = document.createElement('div');
-            lscript.textContent = text;
-            lscript.id = 'mapdata';
-            lscript.hidden = true;
-            document.body.appendChild(lscript);
-            */
-            return text
+            return text;
         });
-        /*
-        .then(function(text){
-            sobj = document.getElementById('mapdata');   
-            //console.log(sobj.textContent); 
-            jobj = JSON.parse(sobj.textContent);              
-            for(ldata in jobj){
-                console.log(ldata.id);
-            }
-            return jobj;         
-        });
-        */
             
         return myfetch;
     } 
@@ -389,12 +323,17 @@
         });
     }
 
+    var chart;
     function populate(ldata,mdata)
     {
         //console.log(mdata);
         //console.log(mdata);
         var ctx = document.getElementById('achart');
-        var chart = new Chart(ctx,{
+
+        if(chart) 
+            chart.destroy();
+
+        chart = new Chart(ctx,{
             type:'scatter',
             data:{
                 datasets: [{
