@@ -352,18 +352,6 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":3,
-				"place":"Chatsworth",
-				"id":158
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-118.6148,34.2506]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
 				"mag":54,
 				"place":"Long Beach",
 				"id":118
@@ -376,13 +364,13 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":12,
-				"place":"Duarte",
-				"id":27
+				"mag":9,
+				"place":"Pasadena",
+				"id":119
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-117.9773,34.1395]
+				"coordinates":[-118.1445,34.1478]
 			}
 		},
 		{
@@ -431,18 +419,6 @@ eqfeed_callback({
 			"geometry":{
 				"type":"Point",
 				"coordinates":[-117.8103,34.0286]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"mag":5,
-				"place":"Highland Park",
-				"id":126
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-87.8003,42.1817]
 			}
 		},
 		{
@@ -563,18 +539,6 @@ eqfeed_callback({
 			"geometry":{
 				"type":"Point",
 				"coordinates":[-117.9076,34.1336]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"mag":8,
-				"place":"Malibu",
-				"id":161
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-118.7798,34.0259]
 			}
 		},
 		{
@@ -712,13 +676,13 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":4,
-				"place":"Hawaiian Gardens",
-				"id":164
+				"mag":5,
+				"place":"Highland Park",
+				"id":126
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-118.0728,33.8314]
+				"coordinates":[-87.8003,42.1817]
 			}
 		},
 		{
@@ -940,13 +904,13 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":1,
-				"place":"Harvard Park",
-				"id":167
+				"mag":29,
+				"place":"Glendale",
+				"id":37
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-118.3043,33.9837]
+				"coordinates":[-118.2551,34.1425]
 			}
 		},
 		{
@@ -1048,61 +1012,13 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":7,
-				"place":"Hermosa Beach",
-				"id":168
+				"mag":3,
+				"place":"Chatsworth",
+				"id":158
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-118.3995,33.8622]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"mag":6,
-				"place":"Artesia",
-				"id":169
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-118.0831,33.8658]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"mag":9,
-				"place":"Pasadena",
-				"id":119
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-118.1445,34.1478]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"mag":5,
-				"place":"San Marino",
-				"id":170
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-118.1065,34.1214]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"mag":5,
-				"place":"La Habra Heights",
-				"id":171
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-117.9506,33.9608]
+				"coordinates":[-118.6148,34.2506]
 			}
 		},
 		{
@@ -1480,13 +1396,13 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":3,
-				"place":"Cudahy",
-				"id":176
+				"mag":11,
+				"place":"Venice",
+				"id":99
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-118.1858,33.9609]
+				"coordinates":[-118.4695,33.9850]
 			}
 		},
 		{
@@ -1660,13 +1576,13 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":29,
-				"place":"Glendale",
-				"id":37
+				"mag":1,
+				"place":"Harvard Park",
+				"id":167
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-118.2551,34.1425]
+				"coordinates":[-118.3043,33.9837]
 			}
 		},
 		{
@@ -1679,18 +1595,6 @@ eqfeed_callback({
 			"geometry":{
 				"type":"Point",
 				"coordinates":[-118.5301,34.2381]
-			}
-		},
-		{
-			"type":"Feature",
-			"properties":{
-				"mag":11,
-				"place":"Venice",
-				"id":99
-			},
-			"geometry":{
-				"type":"Point",
-				"coordinates":[-118.4695,33.9850]
 			}
 		},
 		{
