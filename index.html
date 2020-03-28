@@ -9,23 +9,31 @@
 
       /* Set the size of the div element that contains the map */
       #map {
-        height: 700px;  /* The height is 400 pixels */
-        width: 700px;  /* The width is the width of the web page */
+        padding-top: 20px;
+        height: 500px;  /* The height is 400 pixels */
+        width: 450px;  /* The width is the width of the web page */
        }
+
+       #achart{
+          background-color: white;
+          position: static;
+          width: 440px;
+          height: 300px;
+      }
+
+      .infotable{
+          width: 450px;
+      }
+
        #info-box {
         background-color: white;
         border: 1px solid black;
         
         height: 20px;
-        width: 160px;
+        width: 220px;
         padding: 10px;
-        
-        /*
-        position: absolute;
-        left: 10px;
-        top: 500px;
-        */
       }
+
       #loc-box{
         background-color: white;
         border: 1px solid black;
@@ -33,18 +41,16 @@
         height: 20px;
         padding: 10px;
       }
+      
       #casedate{
         background-color: white;
         border: 1px solid black;
         
         height: 20px;
-        width: 160px;
+        width: 170px;
         padding: 10px;
       }
-      #achart{
-          background-color: white;
-          position: static;
-      }
+
       #storage{
         background-color: white;
         border: 1px solid black;
@@ -52,31 +58,69 @@
         height: 20px;
         padding: 10px;
       }
+
+      .mapstruct{
+          float: left;
+          display: inline-block;
+          padding-right: 50px;
+          padding-bottom: 25px;
+      }
+
+
+      .charstruct{
+          float: left;
+          display: inline-block;
+      }
+
+      .textstruct{
+          clear: both;
+          text-align: center;
+      }
+
+      #mheader{
+          color: white;
+          text-align: center;
+      }
     </style>
   </head>
 
   <body>
-      <center> 
-        <h3 style="color:white">NUMBER OF REPORTED CASES OF COVID-19 IN DIFFERENT PARTS OF LA</h3>
-        <div id="map"></div>
+      <header>
+        <h3 id="mheader">NUMBER OF REPORTED CASES OF COVID-19 IN DIFFERENT PARTS OF LA</h3>
+      </header>
+      
      
-    
-        <p style="color:red">
-            PLEASE NOTE: AREA OF THE CIRCLES DOES NOT INDICATE AREA OVER WHICH CONTAGION IS SPREAD/ACTIVE -
-            JUST THE NUMBER OF CASES. 
-        </p>
+    <article class="mapstruct"> 
+        <div id="map"></div>
+    </article>
+   
+    <article class="chartstruct">
+        <div id="storage" hidden="false">A</div>
+        <h3 style="color:white">
+            <u>Trend of Cases in Selected Location</u>
+        </h3>        
+        
+        <!--
+        <h4  style="color:white">            
+            Data set size too small for proper analysis.
+        </h4>
+        -->
 
-        <p style="color:red">
-          The size of the circles will also be rescaled to accommodate the ever-increasing cases. Use earlier 
-          dates as a reference. 
-        </p>
+        <table border=1>
+            <tr>
+                <td>
+                    <table id="anTab" cellpadding=0 cellspacing=0> 
+                        <tr>
+                            <td>
+                                <canvas id="achart"></canvas>
+                            </td>
+                        </tr>  
+                    </table>
+                </td>
+            </tr>
+        </table>
 
-        <p style="color:white">
-            Data is from: <a href="http://www.publichealth.lacounty.gov/media/Coronavirus/" style="color:red" target="_blank">
-                http://www.publichealth.lacounty.gov/media/Coronavirus/</a>
-        </p>
-
-        <table border=1 cellpadding="5px">
+        <table border=1 cellpadding="5px" class="infotable">
             <tr>
                 <td style="color:white" >Location selected:</td>
                 <td><div id="loc-box"><center>None Selected</center></div></td>
@@ -93,12 +137,7 @@
                 </td>
             </tr>
         </table>
-  
-        <p style="color:white">
-        Earliest available date: Mar 16, 2020.
-        </p>
-
-    </center>
+    </article>
 
     <script src="./charjs/node_modules/moment/moment.js"></script>
     <script>
@@ -207,34 +246,32 @@
       }
     </script>
     
-    <center>
-        <div id="storage" hidden="false">A</div>
-        <h3 style="color:white">
-            <u>Trend of Cases in Selected Location</u>
-        </h3>        
-        
-        <!--
-        <h4  style="color:white">            
-            Data set size too small for proper analysis.
-        </h4>
-        -->
+    
+    <br>
+   
+    <div class="textstruct">
+        <p style="color:red">
+            PLEASE NOTE: AREA OF THE CIRCLES DOES NOT INDICATE AREA OVER WHICH CONTAGION IS SPREAD/ACTIVE -
+            JUST THE NUMBER OF CASES. 
+        </p>
 
-        <table border=1>
-            <tr>
-                <td>
-                    <table id="anTab" cellpadding=0 cellspacing=0> 
-                        <tr>
-                            <td>
-                                <canvas id="achart" width="400px" height="300px"></canvas>
-                            </td>
-                        </tr>  
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </center>
+        <p style="color:red">
+          The size of the circles will also be rescaled to accommodate the ever-increasing cases. Use earlier 
+          dates as a reference. 
+        </p>
 
-     
+        <p style="color:white">
+            Data is from: <a href="http://www.publichealth.lacounty.gov/media/Coronavirus/" style="color:red" target="_blank">
+                http://www.publichealth.lacounty.gov/media/Coronavirus/</a>
+        </p>
+
+        <p style="color:white">
+        Earliest available date: Mar 16, 2020.
+        </p>
+
+    </div>
+ 
+
     <script>
     //////////////////
     //All to do with charts
