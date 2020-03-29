@@ -340,6 +340,30 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
+				"mag":75,
+				"place":"Long Beach",
+				"id":118
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-118.1937,33.7701]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"mag":9,
+				"place":"Pasadena",
+				"id":119
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-118.1445,34.1478]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
 				"mag":3,
 				"place":"Pacoima",
 				"id":144
