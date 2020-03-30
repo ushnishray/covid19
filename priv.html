@@ -101,12 +101,12 @@
   </head>
 
   <body>
-      <header>
-        <h3 id="mheader">NUMBER OF REPORTED CASES OF COVID-19 IN DIFFERENT PARTS OF LA
-        <a href="priv.html" alink="white" vlink="white" >>>></a>
-        </h3>
+      <header>          
+        <h3 id="mheader">
+            <a href="index.html" alink="white" vlink="white" ><<<</a>
+            FRACTION OF CASES CONTRIBUTED BY LOCALITY TO TOTAL CASES IN LA</h3>        
       </header>
-      
+    
      
     <article class="mapstruct"> 
         <div id="map"></div>
@@ -123,7 +123,7 @@
         <table id="anTab">
             <tr class="noborder">
                 <th class="nopadding">                    
-                        <u>Trend of Cases in Selected Location</u>                       
+                        <u>Fraction Contributed to Total Cases in Selected Location</u>                       
                 </th>
             </tr>
             <tr>
@@ -137,6 +137,12 @@
                     </table>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <span style="color:red">Location data</span> and <span style="color:black">Global avg. contrib., &</span>
+                    <span style="color:darkgrey">+/- standard error</span>
+                </td>                
+            </tr>
         </table>
 
         <table border=1 cellpadding="5px" class="infotable">
@@ -145,7 +151,7 @@
                 <td><div id="loc-box"><center>None Selected</center></div></td>
             </tr>
             <tr>
-                <td style="color:white">Number of Cases Reported: </td>
+                <td style="color:white">Fraction Contributed to Total: </td>
                 <td><div id="info-box">0</div></td>
             </tr>
             <tr>
@@ -157,6 +163,29 @@
             </tr>
         </table>
     </article>
+    <br>
+   
+    <div class="textstruct">
+        <p style="color:red">
+            PLEASE NOTE: AREA OF THE CIRCLES DOES NOT INDICATE AREA OVER WHICH CONTAGION IS SPREAD/ACTIVE -
+            JUST THE FRACTION CONTRIBUTION TO TOTAL NUMBER OF CASES. 
+        </p>
+
+        <p style="color:red">
+          The size of the circles will also be rescaled to accommodate the ever-increasing cases. Use earlier 
+          dates as a reference. 
+        </p>
+
+        <p style="color:white">
+            Data is from: <a href="http://www.publichealth.lacounty.gov/media/Coronavirus/" style="color:red" target="_blank">
+                http://www.publichealth.lacounty.gov/media/Coronavirus/</a>
+        </p>
+
+        <p style="color:white">
+        Earliest available date: Mar 16, 2020.
+        </p>
+
+    </div>
 
     <script src="./charjs/node_modules/moment/moment.js"></script>
     <script>
@@ -214,6 +243,10 @@
           loadData(fdate, myfetch);
       }
 
+      function precise(x) {
+        return Number.parseFloat(x).toPrecision(4);
+      }
+
       //Load data from JSON
       function loadData(fdate, myfetch){
         //console.log(fdate);
@@ -222,13 +255,13 @@
         map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: losangeles});
 
         var script = document.createElement('script');
-        script.src = './rawdata/' + fdate + '.js';
+        script.src = './rawdata/' + fdate + 'F.js';
         document.getElementsByTagName('head')[0].appendChild(script);
 
         map.data.setStyle(function(feature){
-            var magnitude = feature.getProperty('mag')*0.45;
+            var magnitude = feature.getProperty('mag')*700.0;
             return{
-                icon: getCircle(magnitude,'red')
+                icon: getCircle(magnitude,'blue')
             };
         });
         
@@ -236,7 +269,7 @@
             map.data.revertStyle();
             map.data.overrideStyle(event.feature,{strokeWeight: 2});
 
-            document.getElementById('info-box').textContent = event.feature.getProperty('mag');
+            document.getElementById('info-box').textContent = precise(event.feature.getProperty('mag'));
             document.getElementById('loc-box').textContent = event.feature.getProperty('place');
             loadLocData(myfetch,event.feature.getProperty('id'));
         });
@@ -269,29 +302,7 @@
     </script>
     
     
-    <br>
-   
-    <div class="textstruct">
-        <p style="color:red">
-            PLEASE NOTE: AREA OF THE CIRCLES DOES NOT INDICATE AREA OVER WHICH CONTAGION IS SPREAD/ACTIVE -
-            JUST THE NUMBER OF CASES. 
-        </p>
 
-        <p style="color:red">
-          The size of the circles will also be rescaled to accommodate the ever-increasing cases. Use earlier 
-          dates as a reference. 
-        </p>
-
-        <p style="color:white">
-            Data is from: <a href="http://www.publichealth.lacounty.gov/media/Coronavirus/" style="color:red" target="_blank">
-                http://www.publichealth.lacounty.gov/media/Coronavirus/</a>
-        </p>
-
-        <p style="color:white">
-        Earliest available date: Mar 16, 2020.
-        </p>
-
-    </div>
  
 
     <script>
@@ -299,7 +310,7 @@
     //All to do with charts
     function loadMasterData()
     {
-        let myfetch = fetch('./rawdata/test.json').then(function(response){
+        let myfetch = fetch('./rawdata/testtot.json').then(function(response){
             return response.text();
         }).then(function(text){
             return text;
@@ -312,24 +323,41 @@
     { 
         myfetch.then(function(text){
             jobj = JSON.parse(text);          
-            for (idx in jobj)
+ 
+            found = false;
+            mdata = [];
+            lavdata = [];
+            for(idx in jobj)
             {
-                ldata = jobj[idx];
-                //console.log(ldata.id);                
-                if(locationID == ldata.id)
+                ldata = jobj[idx]; 
+                
+                if(ldata.id==0){
+                    lavdata = jobj[idx];
+                } 
+
+                if(locationID == ldata.id-1)
                 {                    
                     //Next plot to canvas
                     //But combine data as needed
                     //console.log(ldata.x); //Note there is a bug with Date where counter is WRONG
                     var mdata = ldata.x.map((v,p) => ({x: new Date(v), y: ldata.y[p]}));
-                    populate(ldata,mdata);
+                    found = true;                    
                 }
+            }            
+         
+            var avdata = lavdata.x.map((v,p) => ({x: new Date(v), y: lavdata.y[p]}));
+            var avdatap = lavdata.x.map((v,p) => ({x: new Date(v), y: lavdata.y[p] + lavdata.ye[p]}));
+            var avdatam = lavdata.x.map((v,p) => ({x: new Date(v), y: lavdata.y[p] - lavdata.ye[p]}));
+
+            if(found)
+            {
+                populate(ldata,mdata, avdata, avdatap, avdatam);
             }
         });
     }
 
     var chart;
-    function populate(ldata,mdata)
+    function populate(ldata,mdata, avdata, avdatap, avdatam)
     {
         //console.log(mdata);
         //console.log(mdata);
@@ -344,8 +372,29 @@
                 datasets: [{
                     label: ldata.place,
                     data: mdata,
-                    pointBackgroundColor: 'rgba(63,63,191,1)'
-                }]
+                    pointBackgroundColor: 'red'
+                },
+                {
+                    type:'line',
+                    label: 'Avg. of Frac. Contr.',
+                    data: avdata,
+                    pointBackgroundColor: 'black'
+                },
+                {
+                    type:'line',
+                    label: 'Avg. of Frac. Contr.',
+                    data: avdatap,
+                    pointBackgroundColor: 'black',
+                    pointRadius: 0
+                },
+                {
+                    type:'line',
+                    label: 'Avg. of Frac. Contr.',
+                    data: avdatam,
+                    pointBackgroundColor: 'black',
+                    pointRadius: 0
+                }
+            ]
             },
             options: {
                 responsive: true,
@@ -362,12 +411,12 @@
                     }],
                     yAxes: [{
                         ticks:{
-                            min:0,
-                            stepSize: 1                            
+                            min:0
+                                                        
                         },
                         scaleLabel:{
                             display: true,
-                            labelString: 'Number of Cases'
+                            labelString: 'Fraction of Total Cases'
                         }
                     }]
                 },
