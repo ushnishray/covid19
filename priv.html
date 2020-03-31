@@ -94,17 +94,14 @@
           border:1;
       }
 
-      #anTab{
-          cell-padding: 0;
-      }
     </style>
   </head>
 
-  <body>
+  <body bgcolor="green">
       <header>          
         <h3 id="mheader">
-            <a href="index.html" alink="white" vlink="white" >&lt&lt&lt</a>
-            FRACTION OF CASES CONTRIBUTED BY LOCALITY TO TOTAL CASES IN LA</h3>        
+            <a href="basic4.html" alink="white" vlink="white" >&lt&lt&lt</a>
+            PERCENT OF CASES CONTRIBUTED BY LOCALITY TO TOTAL CASES IN LA</h3>        
       </header>
     
      
@@ -123,7 +120,7 @@
         <table id="anTab">
             <tr class="noborder">
                 <th class="nopadding">                    
-                        <u>Fraction Contributed to Total Cases in Selected Location</u>                       
+                        <u>Percent Contributed by Selected Location to Total Cases</u>                       
                 </th>
             </tr>
             <tr>
@@ -139,8 +136,8 @@
             </tr>
             <tr>
                 <td>
-                    <span style="color:red">Location data</span> and <span style="color:black">Global avg. contrib., &</span>
-                    <span style="color:darkgrey">+/- standard error</span>
+                    <span style="color:red">Location data,</span><span style="color:black"> global avg. contrib. &amp</span>
+                    <span style="color:darkgrey">+/- standard dev.</span>
                 </td>                
             </tr>
         </table>
@@ -151,7 +148,7 @@
                 <td><div id="loc-box"><center>None Selected</center></div></td>
             </tr>
             <tr>
-                <td style="color:white">Fraction Contributed to Total: </td>
+                <td style="color:white">Percent (%) Contributed to Total: </td>
                 <td><div id="info-box">0</div></td>
             </tr>
             <tr>
@@ -269,7 +266,7 @@
             map.data.revertStyle();
             map.data.overrideStyle(event.feature,{strokeWeight: 2});
 
-            document.getElementById('info-box').textContent = precise(event.feature.getProperty('mag'));
+            document.getElementById('info-box').textContent = precise(event.feature.getProperty('mag')*100);
             document.getElementById('loc-box').textContent = event.feature.getProperty('place');
             loadLocData(myfetch,event.feature.getProperty('id'));
         });
@@ -345,9 +342,9 @@
                 }
             }            
          
-            var avdata = lavdata.x.map((v,p) => ({x: new Date(v), y: lavdata.y[p]}));
-            var avdatap = lavdata.x.map((v,p) => ({x: new Date(v), y: lavdata.y[p] + lavdata.ye[p]}));
-            var avdatam = lavdata.x.map((v,p) => ({x: new Date(v), y: lavdata.y[p] - lavdata.ye[p]}));
+            var avdata = lavdata.x.map((v,p) => ({x: new Date(v), y: lavdata.y[p]*100}));
+            var avdatap = lavdata.x.map((v,p) => ({x: new Date(v), y: (lavdata.y[p] + lavdata.ye[p])*100}));
+            var avdatam = lavdata.x.map((v,p) => ({x: new Date(v), y: (lavdata.y[p] - lavdata.ye[p])*100}));
 
             if(found)
             {
@@ -411,12 +408,13 @@
                     }],
                     yAxes: [{
                         ticks:{
-                            min:0
+                            min:0,
+                            max:5
                                                         
                         },
                         scaleLabel:{
                             display: true,
-                            labelString: 'Fraction of Total Cases'
+                            labelString: 'Percent (%) of Total Cases'
                         }
                     }]
                 },
