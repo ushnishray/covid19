@@ -337,7 +337,7 @@
                     //Next plot to canvas
                     //But combine data as needed
                     //console.log(ldata.x); //Note there is a bug with Date where counter is WRONG
-                    var mdata = ldata.x.map((v,p) => ({x: new Date(v), y: ldata.y[p]}));
+                    var mdata = ldata.x.map((v,p) => ({x: new Date(v), y: ldata.y[p]*100}));
                     found = true;                    
                 }
             }            
