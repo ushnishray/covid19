@@ -101,8 +101,8 @@
       <header>          
         <h3 id="mheader">
             <a href="index.html" alink="white" vlink="white" >&lt&lt&lt</a>
-            PERCENT OF CASES CONTRIBUTED BY LOCALITY TO TOTAL CASES IN LA      
-            <a href="rate.html" alink="white" vlink="white" >&gt&gt&gt</a>
+            PERCENT OF CASES CONTRIBUTED BY LOCALITY TO TOTAL CASES IN LA               
+            <a href="rate.html" alink="white" vlink="white" >&gt&gt&gt</a>            
         </h3>
       </header>
     
@@ -202,10 +202,10 @@
       // Initialize and add the map
       function initMap() {
         // Default date
-        gdate = 'apr01_2020';
+        gdate = 'apr02_2020';
         
         var delem = document.getElementById('casedate');
-        delem.value = '2020-04-01';
+        delem.value = '2020-04-02';
 
         myfetch = loadMasterData();
         loadData(gdate, myfetch);
@@ -219,7 +219,7 @@
       //Date changed
       datesavail=['2020-03-16','2020-03-17','2020-03-18','2020-03-19','2020-03-20',
       '2020-03-21','2020-03-22','2020-03-23','2020-03-24','2020-03-25','2020-03-26',
-      '2020-03-27','2020-03-28', '2020-03-29', '2020-03-30',  '2020-03-31', '2020-04-01'];
+      '2020-03-27','2020-03-28', '2020-03-29', '2020-03-30',  '2020-03-31', '2020-04-01', '2020-04-02'];
       codes = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
       function dateChange(){
           var obj = document.getElementById('casedate');

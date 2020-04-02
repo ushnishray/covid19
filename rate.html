@@ -201,10 +201,10 @@
       // Initialize and add the map
       function initMap() {
         // Default date
-        gdate = 'apr01_2020';
+        gdate = 'apr02_2020';
         
         var delem = document.getElementById('casedate');
-        delem.value = '2020-04-01';
+        delem.value = '2020-04-02';
 
         myfetch = loadMasterData();
         loadData(gdate, myfetch);
@@ -216,7 +216,7 @@
       //////////////////
       //All to do with google maps
       //Date changed
-      datesavail=['2020-03-31','2020-04-01'];
+      datesavail=['2020-03-31','2020-04-01','2020-04-02'];
       codes = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
       function dateChange(){
           var obj = document.getElementById('casedate');
