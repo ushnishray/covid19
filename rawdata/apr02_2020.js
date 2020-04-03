@@ -484,6 +484,18 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
+				"mag":139,
+				"place":"Long Beach",
+				"id":118
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-118.1937,33.7701]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
 				"mag":8,
 				"place":"Pacoima",
 				"id":144
