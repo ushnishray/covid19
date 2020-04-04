@@ -201,10 +201,10 @@
       // Initialize and add the map
       function initMap() {
         // Default date
-        gdate = 'apr03_2020';
+        gdate = 'apr04_2020';
         
         var delem = document.getElementById('casedate');
-        delem.value = '2020-04-03';
+        delem.value = '2020-04-04';
 
         myfetch = loadMasterData();
         loadData(gdate, myfetch);
@@ -216,7 +216,7 @@
       //////////////////
       //All to do with google maps
       //Date changed
-      datesavail=['2020-03-31','2020-04-01','2020-04-02','2020-04-03'];
+      datesavail=['2020-03-31','2020-04-01','2020-04-02','2020-04-03','2020-04-04'];
       codes = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
       function dateChange(){
           var obj = document.getElementById('casedate');
@@ -255,7 +255,7 @@
         document.getElementsByTagName('head')[0].appendChild(script);
 
         map.data.setStyle(function(feature){
-            var magnitude = feature.getProperty('mag')*0.125;
+            var magnitude = feature.getProperty('mag')*0.10;
             return{
                 icon: getCircle(magnitude,'purple')
             };
