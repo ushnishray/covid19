@@ -4,7 +4,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":12,
+				"mag":13,
 				"place":"La Verne",
 				"id":49
 			},
@@ -16,7 +16,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":43,
+				"mag":46,
 				"place":"Sunland",
 				"id":90
 			},
@@ -28,7 +28,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":24,
+				"mag":26,
 				"place":"Victoria Park",
 				"id":191
 			},
@@ -40,7 +40,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":91,
+				"mag":94,
 				"place":"Redondo Beach",
 				"id":72
 			},
@@ -52,7 +52,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":154,
+				"mag":172,
 				"place":"South Gate",
 				"id":83
 			},
@@ -64,7 +64,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":114,
+				"mag":124,
 				"place":"Norwalk",
 				"id":127
 			},
@@ -76,7 +76,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":28,
+				"mag":29,
 				"place":"Century City",
 				"id":16
 			},
@@ -88,7 +88,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":14,
+				"mag":15,
 				"place":"Santa Fe Springs",
 				"id":211
 			},
@@ -100,7 +100,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":114,
+				"mag":120,
 				"place":"West Hollywood",
 				"id":107
 			},
@@ -112,7 +112,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":51,
+				"mag":56,
 				"place":"Arleta",
 				"id":135
 			},
@@ -136,7 +136,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":94,
+				"mag":107,
 				"place":"Pico Rivera",
 				"id":120
 			},
@@ -148,7 +148,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":5,
+				"mag":6,
 				"place":"South El Monte",
 				"id":82
 			},
@@ -160,7 +160,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":82,
+				"mag":97,
 				"place":"Pomona",
 				"id":136
 			},
@@ -172,7 +172,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":16,
+				"mag":18,
 				"place":"Gramercy Place",
 				"id":192
 			},
@@ -184,7 +184,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":58,
+				"mag":63,
 				"place":"Bell Gardens",
 				"id":137
 			},
@@ -196,7 +196,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":31,
+				"mag":32,
 				"place":"Harvard Heights",
 				"id":129
 			},
@@ -208,7 +208,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":15,
+				"mag":16,
 				"place":"Playa Vista",
 				"id":70
 			},
@@ -220,7 +220,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":26,
+				"mag":28,
 				"place":"Vermont Knolls",
 				"id":100
 			},
@@ -244,7 +244,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":30,
+				"mag":35,
 				"place":"West Hills",
 				"id":106
 			},
@@ -256,7 +256,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":25,
+				"mag":29,
 				"place":"Los Feliz",
 				"id":56
 			},
@@ -268,7 +268,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":46,
+				"mag":53,
 				"place":"Westchester",
 				"id":110
 			},
@@ -280,7 +280,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":28,
+				"mag":29,
 				"place":"Beverlywood",
 				"id":8
 			},
@@ -292,7 +292,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":192,
+				"mag":248,
 				"place":"Palmdale",
 				"id":66
 			},
@@ -304,7 +304,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":71,
+				"mag":80,
 				"place":"Whittier",
 				"id":113
 			},
@@ -316,7 +316,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":63,
+				"mag":70,
 				"place":"South Park",
 				"id":84
 			},
@@ -328,7 +328,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":26,
+				"mag":29,
 				"place":"Agoura Hills",
 				"id":0
 			},
@@ -340,7 +340,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":33,
+				"mag":35,
 				"place":"Glendora",
 				"id":38
 			},
@@ -352,7 +352,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":80,
+				"mag":87,
 				"place":"Glassell Park",
 				"id":138
 			},
@@ -388,7 +388,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":25,
+				"mag":26,
 				"place":"Bel Air",
 				"id":157
 			},
@@ -400,7 +400,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":48,
+				"mag":57,
 				"place":"Valley Glen",
 				"id":97
 			},
@@ -412,7 +412,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":111,
+				"mag":126,
 				"place":"Reseda",
 				"id":73
 			},
@@ -436,7 +436,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":221,
+				"mag":244,
 				"place":"Santa Clarita",
 				"id":77
 			},
@@ -448,7 +448,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":29,
+				"mag":36,
 				"place":"Lakeview Terrace",
 				"id":184
 			},
@@ -472,7 +472,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":8,
+				"mag":9,
 				"place":"Rancho Park",
 				"id":197
 			},
@@ -484,7 +484,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":62,
+				"mag":72,
 				"place":"West Covina",
 				"id":105
 			},
@@ -496,7 +496,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":109,
+				"mag":141,
 				"place":"Panorama City",
 				"id":141
 			},
@@ -508,7 +508,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":127,
+				"mag":150,
 				"place":"Westlake",
 				"id":111
 			},
@@ -520,7 +520,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":48,
+				"mag":54,
 				"place":"Chatsworth",
 				"id":158
 			},
@@ -544,7 +544,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":32,
+				"mag":37,
 				"place":"Duarte",
 				"id":27
 			},
@@ -556,7 +556,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":100,
+				"mag":117,
 				"place":"Pacoima",
 				"id":144
 			},
@@ -568,7 +568,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":41,
+				"mag":42,
 				"place":"Westwood",
 				"id":112
 			},
@@ -580,7 +580,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":65,
+				"mag":71,
 				"place":"Wilshire Center",
 				"id":115
 			},
@@ -592,7 +592,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":24,
+				"mag":25,
 				"place":"Diamond Bar",
 				"id":25
 			},
@@ -604,7 +604,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":51,
+				"mag":52,
 				"place":"Highland Park",
 				"id":126
 			},
@@ -616,7 +616,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":124,
+				"mag":135,
 				"place":"Santa Monica",
 				"id":78
 			},
@@ -640,7 +640,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":111,
+				"mag":123,
 				"place":"West Vernon",
 				"id":109
 			},
@@ -652,7 +652,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":13,
+				"mag":15,
 				"place":"Cheviot Hills",
 				"id":182
 			},
@@ -664,7 +664,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":74,
+				"mag":78,
 				"place":"Bellflower",
 				"id":6
 			},
@@ -676,7 +676,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":50,
+				"mag":56,
 				"place":"Watts",
 				"id":140
 			},
@@ -688,7 +688,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":24,
+				"mag":29,
 				"place":"Temple City",
 				"id":194
 			},
@@ -700,7 +700,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":33,
+				"mag":37,
 				"place":"Hyde Park",
 				"id":44
 			},
@@ -712,7 +712,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":249,
+				"mag":265,
 				"place":"Melrose",
 				"id":60
 			},
@@ -724,7 +724,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":78,
+				"mag":87,
 				"place":"Huntington Park",
 				"id":178
 			},
@@ -736,7 +736,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":44,
+				"mag":52,
 				"place":"Baldwin Park",
 				"id":185
 			},
@@ -748,7 +748,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":90,
+				"mag":93,
 				"place":"Woodland Hills",
 				"id":117
 			},
@@ -760,7 +760,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":11,
+				"mag":12,
 				"place":"Thai Town",
 				"id":201
 			},
@@ -772,7 +772,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":17,
+				"mag":19,
 				"place":"Rosemead",
 				"id":179
 			},
@@ -784,7 +784,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":8,
+				"mag":9,
 				"place":"Marina Peninsula",
 				"id":190
 			},
@@ -796,7 +796,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":23,
+				"mag":31,
 				"place":"Azusa",
 				"id":160
 			},
@@ -808,7 +808,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":23,
+				"mag":26,
 				"place":"Malibu",
 				"id":161
 			},
@@ -820,7 +820,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":52,
+				"mag":53,
 				"place":"Hollywood Hills",
 				"id":43
 			},
@@ -832,7 +832,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":59,
+				"mag":61,
 				"place":"Brentwood",
 				"id":10
 			},
@@ -844,7 +844,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":80,
+				"mag":82,
 				"place":"Palms",
 				"id":67
 			},
@@ -856,7 +856,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":78,
+				"mag":93,
 				"place":"Koreatown",
 				"id":46
 			},
@@ -868,7 +868,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":16,
+				"mag":19,
 				"place":"Claremont",
 				"id":124
 			},
@@ -880,7 +880,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":106,
+				"mag":134,
 				"place":"Hawthorne",
 				"id":41
 			},
@@ -892,7 +892,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":17,
+				"mag":22,
 				"place":"Cloverdale/Cochran",
 				"id":19
 			},
@@ -904,7 +904,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":39,
+				"mag":48,
 				"place":"San Fernando",
 				"id":75
 			},
@@ -916,7 +916,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":30,
+				"mag":34,
 				"place":"South Pasadena",
 				"id":85
 			},
@@ -928,7 +928,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":46,
+				"mag":54,
 				"place":"Little Bangladesh",
 				"id":146
 			},
@@ -952,7 +952,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":16,
+				"mag":17,
 				"place":"Adams-Normandie",
 				"id":186
 			},
@@ -964,7 +964,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":39,
+				"mag":46,
 				"place":"Wholesale District",
 				"id":125
 			},
@@ -988,7 +988,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":6,
+				"mag":8,
 				"place":"Hawaiian Gardens",
 				"id":164
 			},
@@ -1000,7 +1000,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":7,
+				"mag":9,
 				"place":"Commerce",
 				"id":216
 			},
@@ -1012,7 +1012,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":30,
+				"mag":32,
 				"place":"Arcadia",
 				"id":3
 			},
@@ -1024,7 +1024,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":63,
+				"mag":74,
 				"place":"Central",
 				"id":165
 			},
@@ -1036,7 +1036,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":72,
+				"mag":87,
 				"place":"Vernon Central",
 				"id":102
 			},
@@ -1048,7 +1048,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":73,
+				"mag":83,
 				"place":"Exposition Park",
 				"id":34
 			},
@@ -1060,7 +1060,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":141,
+				"mag":151,
 				"place":"Burbank",
 				"id":11
 			},
@@ -1072,7 +1072,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":20,
+				"mag":23,
 				"place":"Monrovia",
 				"id":149
 			},
@@ -1096,7 +1096,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":82,
+				"mag":90,
 				"place":"San Pedro",
 				"id":76
 			},
@@ -1108,7 +1108,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":89,
+				"mag":103,
 				"place":"Temple-Beaudry",
 				"id":166
 			},
@@ -1120,7 +1120,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":30,
+				"mag":33,
 				"place":"La Canada Flintridge",
 				"id":47
 			},
@@ -1132,7 +1132,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":97,
+				"mag":116,
 				"place":"Boyle Heights",
 				"id":9
 			},
@@ -1144,7 +1144,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":61,
+				"mag":70,
 				"place":"Sun Valley",
 				"id":89
 			},
@@ -1156,7 +1156,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":37,
+				"mag":40,
 				"place":"La Mirada",
 				"id":48
 			},
@@ -1168,7 +1168,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":73,
+				"mag":84,
 				"place":"Winnetka",
 				"id":116
 			},
@@ -1180,7 +1180,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":59,
+				"mag":61,
 				"place":"Manhattan Beach",
 				"id":58
 			},
@@ -1192,7 +1192,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":69,
+				"mag":75,
 				"place":"West Adams",
 				"id":104
 			},
@@ -1204,7 +1204,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":41,
+				"mag":44,
 				"place":"Baldwin Hills",
 				"id":5
 			},
@@ -1216,7 +1216,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":61,
+				"mag":72,
 				"place":"El Monte",
 				"id":183
 			},
@@ -1228,7 +1228,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":42,
+				"mag":46,
 				"place":"Mission Hills",
 				"id":180
 			},
@@ -1252,7 +1252,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":8,
+				"mag":9,
 				"place":"Toluca Lake",
 				"id":198
 			},
@@ -1264,7 +1264,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":40,
+				"mag":42,
 				"place":"Cerritos",
 				"id":18
 			},
@@ -1276,7 +1276,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":16,
+				"mag":17,
 				"place":"Atwater Village",
 				"id":202
 			},
@@ -1288,7 +1288,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":50,
+				"mag":60,
 				"place":"Harvard Park",
 				"id":167
 			},
@@ -1312,7 +1312,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":146,
+				"mag":157,
 				"place":"Hollywood",
 				"id":42
 			},
@@ -1324,7 +1324,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":58,
+				"mag":61,
 				"place":"Hancock Park",
 				"id":40
 			},
@@ -1336,7 +1336,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":8,
+				"mag":10,
 				"place":"Shadow Hills",
 				"id":195
 			},
@@ -1348,7 +1348,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":30,
+				"mag":32,
 				"place":"Green Meadows",
 				"id":187
 			},
@@ -1360,7 +1360,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":93,
+				"mag":97,
 				"place":"Sherman Oaks",
 				"id":80
 			},
@@ -1384,7 +1384,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":49,
+				"mag":50,
 				"place":"Rancho Palos Verdes",
 				"id":71
 			},
@@ -1396,7 +1396,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":47,
+				"mag":51,
 				"place":"Alhambra",
 				"id":1
 			},
@@ -1408,7 +1408,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":31,
+				"mag":34,
 				"place":"Historic Filipinotown",
 				"id":189
 			},
@@ -1432,7 +1432,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":9,
+				"mag":11,
 				"place":"Cadillac-Corning",
 				"id":212
 			},
@@ -1444,7 +1444,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":43,
+				"mag":46,
 				"place":"West Los Angeles",
 				"id":108
 			},
@@ -1456,7 +1456,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":142,
+				"mag":172,
 				"place":"Van Nuys",
 				"id":98
 			},
@@ -1468,7 +1468,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":42,
+				"mag":45,
 				"place":"Maywood",
 				"id":152
 			},
@@ -1480,7 +1480,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":21,
+				"mag":22,
 				"place":"Hermosa Beach",
 				"id":168
 			},
@@ -1504,7 +1504,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":65,
+				"mag":72,
 				"place":"Little Armenia",
 				"id":199
 			},
@@ -1516,7 +1516,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":10,
+				"mag":11,
 				"place":"Artesia",
 				"id":169
 			},
@@ -1528,7 +1528,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":30,
+				"mag":40,
 				"place":"Lincoln Heights",
 				"id":54
 			},
@@ -1540,7 +1540,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":8,
+				"mag":9,
 				"place":"San Marino",
 				"id":170
 			},
@@ -1552,7 +1552,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":25,
+				"mag":26,
 				"place":"Studio City",
 				"id":88
 			},
@@ -1564,7 +1564,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":30,
+				"mag":34,
 				"place":"Mid-city",
 				"id":172
 			},
@@ -1588,7 +1588,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":52,
+				"mag":54,
 				"place":"Carthay",
 				"id":173
 			},
@@ -1600,7 +1600,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":31,
+				"mag":32,
 				"place":"Harbor City",
 				"id":153
 			},
@@ -1612,7 +1612,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":43,
+				"mag":47,
 				"place":"Monterey Park",
 				"id":62
 			},
@@ -1624,7 +1624,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":16,
+				"mag":19,
 				"place":"Walnut",
 				"id":103
 			},
@@ -1636,7 +1636,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":22,
+				"mag":25,
 				"place":"Mt. Washington",
 				"id":130
 			},
@@ -1648,7 +1648,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":33,
+				"mag":44,
 				"place":"Country Club Park",
 				"id":188
 			},
@@ -1660,7 +1660,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":123,
+				"mag":145,
 				"place":"Canoga Park",
 				"id":13
 			},
@@ -1672,7 +1672,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":93,
+				"mag":104,
 				"place":"Bell",
 				"id":154
 			},
@@ -1684,7 +1684,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":69,
+				"mag":81,
 				"place":"Granada Hills",
 				"id":39
 			},
@@ -1696,7 +1696,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":43,
+				"mag":48,
 				"place":"Harbor Gateway",
 				"id":131
 			},
@@ -1708,7 +1708,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":5,
+				"mag":8,
 				"place":"Manchester Square",
 				"id":220
 			},
@@ -1720,7 +1720,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":103,
+				"mag":119,
 				"place":"Lynwood",
 				"id":57
 			},
@@ -1732,7 +1732,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":56,
+				"mag":61,
 				"place":"Tarzana",
 				"id":92
 			},
@@ -1744,7 +1744,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":52,
+				"mag":60,
 				"place":"Valley Village",
 				"id":174
 			},
@@ -1756,7 +1756,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":132,
+				"mag":184,
 				"place":"Lancaster",
 				"id":52
 			},
@@ -1768,7 +1768,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":36,
+				"mag":42,
 				"place":"Lawndale",
 				"id":53
 			},
@@ -1780,7 +1780,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":19,
+				"mag":23,
 				"place":"San Gabriel",
 				"id":132
 			},
@@ -1792,7 +1792,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":184,
+				"mag":200,
 				"place":"North Hollywood",
 				"id":63
 			},
@@ -1804,7 +1804,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":177,
+				"mag":215,
 				"place":"Inglewood",
 				"id":45
 			},
@@ -1816,7 +1816,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":63,
+				"mag":74,
 				"place":"Florence-Firestone",
 				"id":175
 			},
@@ -1828,7 +1828,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":163,
+				"mag":181,
 				"place":"Carson",
 				"id":14
 			},
@@ -1840,7 +1840,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":75,
+				"mag":93,
 				"place":"North Hills",
 				"id":151
 			},
@@ -1852,7 +1852,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":137,
+				"mag":147,
 				"place":"Downey",
 				"id":133
 			},
@@ -1864,7 +1864,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":63,
+				"mag":73,
 				"place":"Encino",
 				"id":33
 			},
@@ -1876,7 +1876,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":29,
+				"mag":32,
 				"place":"Miracle Mile",
 				"id":61
 			},
@@ -1912,7 +1912,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":45,
+				"mag":63,
 				"place":"Vermont Vista",
 				"id":101
 			},
@@ -1924,7 +1924,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":204,
+				"mag":217,
 				"place":"Torrance",
 				"id":94
 			},
@@ -1936,7 +1936,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":35,
+				"mag":41,
 				"place":"Crenshaw District",
 				"id":142
 			},
@@ -1948,7 +1948,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":40,
+				"mag":44,
 				"place":"Culver City",
 				"id":23
 			},
@@ -1960,7 +1960,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":80,
+				"mag":97,
 				"place":"Paramount",
 				"id":68
 			},
@@ -1972,7 +1972,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":56,
+				"mag":61,
 				"place":"Lakewood",
 				"id":51
 			},
@@ -1984,7 +1984,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":38,
+				"mag":42,
 				"place":"University Park",
 				"id":96
 			},
@@ -1996,7 +1996,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":58,
+				"mag":63,
 				"place":"Eagle Rock",
 				"id":28
 			},
@@ -2008,7 +2008,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":30,
+				"mag":40,
 				"place":"Cudahy",
 				"id":176
 			},
@@ -2020,7 +2020,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":20,
+				"mag":21,
 				"place":"El Segundo",
 				"id":32
 			},
@@ -2032,7 +2032,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":92,
+				"mag":97,
 				"place":"Silverlake",
 				"id":81
 			},
@@ -2044,7 +2044,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":12,
+				"mag":16,
 				"place":"Alsace",
 				"id":207
 			},
@@ -2056,7 +2056,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":171,
+				"mag":195,
 				"place":"Sylmar",
 				"id":91
 			},
@@ -2068,7 +2068,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":34,
+				"mag":36,
 				"place":"Downtown",
 				"id":26
 			},
@@ -2080,7 +2080,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":39,
+				"mag":42,
 				"place":"Porter Ranch",
 				"id":123
 			},
@@ -2092,7 +2092,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":72,
+				"mag":80,
 				"place":"East Hollywood",
 				"id":29
 			},
@@ -2104,7 +2104,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":30,
+				"mag":35,
 				"place":"Tujunga",
 				"id":95
 			},
@@ -2116,7 +2116,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":51,
+				"mag":55,
 				"place":"Crestview",
 				"id":22
 			},
@@ -2128,7 +2128,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":50,
+				"mag":53,
 				"place":"Lake Balboa",
 				"id":50
 			},
@@ -2140,7 +2140,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":40,
+				"mag":43,
 				"place":"Del Rey",
 				"id":24
 			},
@@ -2164,7 +2164,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":115,
+				"mag":126,
 				"place":"Compton",
 				"id":20
 			},
@@ -2176,7 +2176,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":55,
+				"mag":60,
 				"place":"Wilmington",
 				"id":114
 			},
@@ -2188,7 +2188,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":107,
+				"mag":121,
 				"place":"Gardena",
 				"id":36
 			},
@@ -2200,7 +2200,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":46,
+				"mag":50,
 				"place":"Century Palms/Cove",
 				"id":17
 			},
@@ -2212,7 +2212,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":15,
+				"mag":16,
 				"place":"Figueroa Park Square",
 				"id":204
 			},
@@ -2224,7 +2224,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":10,
+				"mag":11,
 				"place":"Reseda Ranch",
 				"id":208
 			},
@@ -2236,7 +2236,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":7,
+				"mag":8,
 				"place":"Longwood",
 				"id":218
 			},
@@ -2248,7 +2248,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":56,
+				"mag":60,
 				"place":"El Sereno",
 				"id":181
 			},
@@ -2260,7 +2260,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":339,
+				"mag":369,
 				"place":"Glendale",
 				"id":37
 			},
@@ -2272,7 +2272,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":87,
+				"mag":101,
 				"place":"Northridge",
 				"id":64
 			},
@@ -2296,7 +2296,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":27,
+				"mag":29,
 				"place":"Lomita",
 				"id":55
 			},
@@ -2308,7 +2308,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":113,
+				"mag":126,
 				"place":"Pico-Union",
 				"id":162
 			},
@@ -2320,7 +2320,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":63,
+				"mag":66,
 				"place":"Covina",
 				"id":21
 			},
@@ -2344,7 +2344,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":21,
+				"mag":22,
 				"place":"South Carthay",
 				"id":177
 			},
@@ -2356,7 +2356,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":12,
+				"mag":14,
 				"place":"Elysian Valley",
 				"id":210
 			},
@@ -2368,7 +2368,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":94,
+				"mag":99,
 				"place":"Beverly Hills",
 				"id":7
 			},
@@ -2380,7 +2380,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":22,
+				"mag":30,
 				"place":"La Puente",
 				"id":134
 			},
@@ -2392,7 +2392,7 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":80,
+				"mag":88,
 				"place":"Montebello",
 				"id":156
 			},
