@@ -604,13 +604,13 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":3.20543642017e-05,
-				"place":"Playa Del Rey",
-				"id":235
+				"mag":0.0287848190531,
+				"place":"Long Beach",
+				"id":118
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-118.4422,33.9564]
+				"coordinates":[-118.1937,33.7701]
 			}
 		},
 		{
@@ -1420,13 +1420,13 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
-				"mag":0.00554540500689,
-				"place":"Vermont Vista",
-				"id":101
+				"mag":0.0170208673911,
+				"place":"Pasadena",
+				"id":119
 			},
 			"geometry":{
 				"type":"Point",
-				"coordinates":[-118.2827,33.9455]
+				"coordinates":[-118.1445,34.1478]
 			}
 		},
 		{
@@ -1936,6 +1936,18 @@ eqfeed_callback({
 		{
 			"type":"Feature",
 			"properties":{
+				"mag":3.20543642017e-05,
+				"place":"Playa Del Rey",
+				"id":235
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-118.4422,33.9564]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
 				"mag":0.00862262397025,
 				"place":"Lynwood",
 				"id":57
@@ -2135,6 +2147,18 @@ eqfeed_callback({
 			"geometry":{
 				"type":"Point",
 				"coordinates":[-118.2366,34.0838]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"mag":0.00554540500689,
+				"place":"Vermont Vista",
+				"id":101
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-118.2827,33.9455]
 			}
 		},
 		{
